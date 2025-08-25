@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Dental</title>
+    <meta name="description" content="Schedule your dental appointment online. Choose your preferred date, time, and service. New patients welcome!">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Appointment Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your visit online - it's quick and easy!</p>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-container">
+                <div class="appointment-info">
+                    <h2>Schedule Your Visit</h2>
+                    <p>Choose your preferred appointment time and we'll confirm your booking within 24 hours.</p>
+                    
+                    <div class="appointment-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⏰</span>
+                            <span>Flexible scheduling</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📞</span>
+                            <span>Quick confirmation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🆕</span>
+                            <span>New patients welcome</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💳</span>
+                            <span>Insurance accepted</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-alternative">
+                        <h3>Prefer to Call?</h3>
+                        <p>Call us at <strong>(555) 123-4567</strong></p>
+                        <p class="hours-note">Office Hours: Mon-Thu 8AM-6PM, Fri 8AM-4PM, Sat 9AM-2PM</p>
+                    </div>
+                </div>
+
+                <div class="appointment-form-container">
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Appointment Details</h3>
+                            
+                            <div class="form-group">
+                                <label for="patientType">Patient Type *</label>
+                                <select id="patientType" name="patientType" required>
+                                    <option value="">Select patient type</option>
+                                    <option value="new">New Patient</option>
+                                    <option value="existing">Existing Patient</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="serviceType">Service Needed *</label>
+                                <select id="serviceType" name="serviceType" required>
+                                    <option value="">Select service</option>
+                                    <option value="cleaning">Routine Cleaning & Exam</option>
+                                    <option value="consultation">New Patient Consultation</option>
+                                    <option value="filling">Dental Filling</option>
+                                    <option value="crown">Crown/Bridge</option>
+                                    <option value="whitening">Teeth Whitening</option>
+                                    <option value="emergency">Emergency/Pain</option>
+                                    <option value="cosmetic">Cosmetic Consultation</option>
+                                    <option value="other">Other (specify in notes)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="preferredDate">Preferred Date *</label>
+                                    <input type="date" id="preferredDate" name="preferredDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferredTime">Preferred Time *</label>
+                                    <select id="preferredTime" name="preferredTime" required>
+                                        <option value="">Select time</option>
+                                        <option value="8:00 AM">8:00 AM</option>
+                                        <option value="9:00 AM">9:00 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                        <option value="5:00 PM">5:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Additional Information</h3>
+                            
+                            <div class="form-group">
+                                <label for="insurance">Insurance Provider</label>
+                                <select id="insurance" name="insurance">
+                                    <option value="">Select insurance (if applicable)</option>
+                                    <option value="delta">Delta Dental</option>
+                                    <option value="bcbs">Blue Cross Blue Shield</option>
+                                    <option value="cigna">Cigna</option>
+                                    <option value="aetna">Aetna</option>
+                                    <option value="metlife">MetLife</option>
+                                    <option value="humana">Humana</option>
+                                    <option value="united">United Healthcare</option>
+                                    <option value="none">No Insurance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes">Special Requests or Notes</label>
+                                <textarea id="notes" name="notes" rows="4" placeholder="Any specific concerns, accessibility needs, or special requests..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="consent" name="consent" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the Terms of Service and Privacy Policy *
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="reminders" name="reminders">
+                                    <span class="checkmark"></span>
+                                    Send me appointment reminders via text/email
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="submit-btn">Book Appointment</button>
+                            <p class="form-note">* We'll contact you within 24 hours to confirm your appointment</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <section class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <span class="emergency-icon">🚨</span>
+                <div class="emergency-text">
+                    <h3>Have a Dental Emergency?</h3>
+                    <p>Don't wait - call us immediately at (555) 123-4567</p>
+                </div>
+                <a href="tel:5551234567" class="emergency-call-btn">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

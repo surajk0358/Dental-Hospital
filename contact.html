@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dental</title>
+    <meta name="description" content="Contact Dental Practice. Call (555) 123-4567 for appointments, emergencies, or general inquiries. Located at 123 Main Street.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help with all your dental needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Visit Our Office</h3>
+                    <div class="contact-details">
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Emergency:</strong> (555) 123-4567</p>
+                        <p><strong>Fax:</strong> (555) 123-4568</p>
+                    </div>
+                    <div class="contact-action">
+                        <a href="tel:5551234567" class="contact-btn">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <div class="contact-details">
+                        <p><strong>General:</strong> info@smilesdental.com</p>
+                        <p><strong>New Patients:</strong> newpatients@smilesdental.com</p>
+                        <p><strong>Appointments:</strong> appointments@smilesdental.com</p>
+                    </div>
+                    <div class="contact-action">
+                        <a href="mailto:info@smilesdental.com" class="contact-btn">Send Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">🕐</div>
+                    <h3>Office Hours</h3>
+                    <div class="contact-details">
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Thursday</span>
+                                <span>8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Friday</span>
+                                <span>8:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday</span>
+                                <span>9:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Sunday</span>
+                                <span>Emergency Only</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Send us a Message</h2>
+                    <p>Have a question or want to schedule an appointment? We'd love to hear from you!</p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="appointment">Schedule Appointment</option>
+                            <option value="emergency">Emergency</option>
+                            <option value="insurance">Insurance Questions</option>
+                            <option value="services">Service Information</option>
+                            <option value="billing">Billing Questions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for dental tips and office updates
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <p class="form-note">* Required fields. We'll respond within 24 hours.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Information -->
+    <section class="emergency-section">
+        <div class="container">
+            <div class="emergency-card">
+                <div class="emergency-icon">🚨</div>
+                <h2>Dental Emergency?</h2>
+                <p>We understand that dental emergencies can happen at any time. If you're experiencing severe pain, trauma, or urgent dental issues, don't wait.</p>
+                
+                <div class="emergency-actions">
+                    <a href="tel:5551234567" class="emergency-btn">Call Emergency Line</a>
+                    <span class="emergency-number">(555) 123-4567</span>
+                </div>
+
+                <div class="emergency-tips">
+                    <h3>Common Dental Emergencies:</h3>
+                    <ul>
+                        <li>Severe toothache or pain</li>
+                        <li>Knocked out or broken teeth</li>
+                        <li>Lost fillings or crowns</li>
+                        <li>Facial swelling</li>
+                        <li>Bleeding gums</li>
+                        <li>Jaw injury</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
